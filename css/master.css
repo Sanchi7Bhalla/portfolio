@@ -1,0 +1,383 @@
+/* Cascading stylesheet for the website */
+  .circle {
+        border-color: #32292F;
+        border-image: none;
+        border-radius: 50% 50% 50% 50%;
+        border-style: solid;
+        border-width: 0px;
+        height: 200px;
+        width: 200px;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+  }
+  #nav-list{
+        font-size:15px; 
+  }
+  .active{
+    background-color:#FFDF00;
+    color:#0E1320;
+  }
+  #header-nav{
+        background-color:#FFDF00;
+  }
+  img {
+        height: 100%;
+        width: 100%;
+  }
+  a {
+    color:black;/* set the text color to blue here */
+    text-decoration: none; /* This means we do not want hyperlinks to be underlined */
+  }
+  a:hover {
+    color: red;/* set the text color to red here */
+    text-decoration: none; /* This means we do not want hyperlinks to be underlined */
+  }
+  .bgbg {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      font-family: "Lora", sans-serif;
+      color: #fff;
+      background: linear-gradient(45deg,#0E1320 , #0F1024, #131234);
+      background-size: 400% 400%;
+  }
+    body{
+    font-family: Arial, Helvetica, sans-serif; /* set the font here */
+    text-align: center /* set the text alignment here */
+  }
+  .body-img{
+  background-color: #cccccc;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  }
+  .stay-here{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  }
+  h1 {
+    padding-top: 60px;
+    margin-bottom: 0.5rem;
+    margin-top: 3rem;
+  }
+  h2 {
+    color:black;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+  }
+  h3 {
+    margin-bottom: 0;
+    margin-top: 2rem;
+  }
+  h4 {
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+  h5 {
+    margin-top: 0.5rem;
+  }
+  hr {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    height:2px;
+    width:80% ;
+    background-color:#32292F;
+  }
+  /* this controls how the bullet points in the resume page looks */
+  ul {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+    text-decoration-color: #FFDF00;
+  }
+body {
+  width: 100%;
+    height: 100%;
+    background-image:url(C:\Users\Hp\Desktop\portfolio\dope2.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    margin: 0;
+    padding: 0;
+ 
+}
+.fa{
+  border: 1px solid #FFDF00;
+  border-radius: 45%;
+  width: 75px;
+  height: 100px;
+  font-size: large;
+  margin: auto;
+  padding: 13px;
+  height: 10vh;
+  color:white;
+  background: linear-gradient( #0E1320, #23a6d5, #FFDF00);
+  background-size: 400% 400%;
+  
+}
+.glyphicon{
+   padding : 0% 35% 0% 35%;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  .crouselbody {
+    font-family: 'Press Start 2P', cursive;
+    margin: auto;
+    padding: 1rem;
+    max-width: 100vmin;
+  }
+  #carouselExampleControls {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+  .slideshow {
+    display: flex;
+    overflow: hidden;
+    perspective-origin: center;
+    transform-style: preserve-3d;
+    padding: 10% 0;
+    opacity: 0;
+  }
+  .slideshow.in {
+    animation: in 2s ease-in both;
+  }
+  .slideshow > img {
+    max-height: 80vh;
+    max-width: 100%;
+    width: 60%;
+    object-fit: contain;
+  }
+  @keyframes in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  /* this controls how the feedback box */
+  .glyphicon{
+    padding : 0% 35% 0% 35%;
+   }
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+
+.feedback-button {
+  height: 40px;
+  border: solid 3px #CCCCCC;
+  background: #333;
+  width: 100px;
+  line-height: 32px;
+  -webkit-transform: rotate(-90deg);
+  font-weight: 600;
+  color: white;
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  text-align: center;
+  font-size: 17px;
+  position: fixed;
+  right: -40px;
+  top: 45%;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  z-index: 999;
+}
+#feedback-main {
+  display: none;
+  float: left;
+  padding-top: 20px;
+}
+#feedback-div {
+  background-color: rgba(72, 72, 72, 1);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  width: 550px;
+  float: left;
+  left: 50%;
+  position: relative;
+  margin-top: 30px;
+  margin-left: -260px;
+  border-radius: 0%;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+.feedback-input {
+  color: #3c3c3c;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  padding: 13px 13px 13px 54px;
+  margin-bottom: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+.feedback-input:focus {
+  background: #fff;
+  box-shadow: 0;
+  border: 3px solid #3498db;
+  color: #3498db;
+  outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+/* Icons ---------------------------------- */
+#feedback-name {
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 20px 20px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+#feedback-name:focus {
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 20px 20px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+#feedback-email {
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 20px 20px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+#feedback-email:focus {
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 20px 20px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+#feedback-comment {
+  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+  background-size: 20px 20px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+#feedback-comment {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+input:hover,
+#feedback-comment:hover,
+input:focus,
+#feedback-comment:focus {
+  background-color: white;
+}
+
+#feedback-button-blue {
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  float: left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  font-size: 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+#feedback-button-blue:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #0493bd;
+}
+
+.feedback-button-blue:hover {
+  color: #3498db;
+}
+
+.feedback-ease {
+  width: 0px;
+  height: 74px;
+  background-color: #fbfbfb;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.feedback-submit:hover .feedback-ease {
+  width: 100%;
+  background-color: white;
+}
+
+@media only screen and (max-width: 580px) {
+  #feedback-div {
+    position: relative;
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+
+
+
+
+
+
+.feedback-button {
+  font-family: Roboto;
+}
+
+.feedback-button {
+   height: 40px;
+  border: solid 3px #CCCCCC;
+  background: #FFDF00;
+  width: 100px;
+  line-height: 32px;
+  -webkit-transform: rotate(-90deg);
+  font-weight: 600;
+  color: #0E1320;
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  text-align: center;
+  font-size: 17px;
+  position: fixed;
+  right: -40px;
+  top: 45%;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  z-index: 999;
+} 
+
+.feedback-button,
+.feedback-button:hover {
+  transition: background 150ms;
+}
+
+.feedback-button:hover,
+.feedback-button:active { 
+  color: #eee; 
+  background: #114C8F;
+  border-color: #0E3A59;
+} 
+
+
